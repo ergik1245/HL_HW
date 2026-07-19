@@ -7,13 +7,13 @@ class Drawable(Protocol):
 def render(shape: Drawable) -> None:
     print(shape.draw())
 
-class not_smile:
+class NoSmile:
     def draw(self) -> str:
         return ":("
 
-class smile:
+class Smile:
     def draw(self) -> str:
         return ":)"
 
-render(not_smile())
-render(smile())
+render(NoSmile())
+render(Smile())
